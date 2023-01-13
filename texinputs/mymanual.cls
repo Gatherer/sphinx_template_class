@@ -7,7 +7,7 @@
 
 \LoadClassWithOptions{sphinxmanual}
 
-\newcommand{\sphinxtableofcontents}{%
+\renewcommand{\sphinxtableofcontents}{%
     \pagenumbering{roman}%
     \begingroup
         \parskip \z@skip
