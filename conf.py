@@ -266,14 +266,23 @@ latex_elements = {
     # Latex figure (float) alignment
     #
     # 'figure_align': 'htbp',
+
+    'fncychap': ''
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (root_doc, 'test.tex', u'test Documentation',
-     u'test', 'manual'),
+    (root_doc,
+    'test.tex',
+    u'test Documentation',
+    u'test',
+    'mymanual'),
+]
+
+latex_additional_files = [
+    'texinputs/mymanual.cls'
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
