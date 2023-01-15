@@ -5,6 +5,9 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{mymanual}[2023/01/13 v1.0.0 MY Document class (Sphinx manual)]
 
+% fix according https://github.com/sphinx-doc/sphinx/issues/11128#issuecomment-1382950715
+\def\sphinxdocclass{report}
+
 \LoadClassWithOptions{sphinxmanual}
 
 \renewcommand{\sphinxtableofcontents}{%
