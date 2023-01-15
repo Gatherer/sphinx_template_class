@@ -276,7 +276,7 @@ latex_documents = [
     (root_doc,
     'test.tex',
     u'test Documentation',
-    u'test',
+    u'test2',
     'mymanual'),
 ]
 
