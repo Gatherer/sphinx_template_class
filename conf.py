@@ -35,7 +35,6 @@ extensions = [
     'sphinx.ext.todo',
     'sphinxcontrib.bibtex',
     'sphinxcontrib.scalebybuilder',
-    'sphinxcontrib.globalsubs',
     'sphinxcontrib.wavedrom',
     'sphinxcontrib.inkscapeconverter'
 ]
@@ -58,7 +57,7 @@ root_doc = 'index'
 
 # General information about the project.
 project = u'test'
-copyright = u'2023, test'
+copyright = u'2024, test'
 author = u'test'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -121,6 +120,14 @@ pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
+
+# configure bibtex
+bibtex_bibfiles = ['refs.bib']
+bibtex_encoding = 'latin'
+
+# style settings if non defined the alpha style is used, others are plain, unsrt
+# and unsrtalpha
+bibtex_default_style = 'unsrt'
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -240,14 +247,6 @@ html_theme = 'alabaster'
 htmlhelp_basename = 'testdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
-
-# configure bibtex
-bibtex_bibfiles = ['refs.bib']
-bibtex_encoding = 'latin'
-
-# style settings if non defined the alpha style is used, others are plain, unsrt
-# and unsrtalpha
-bibtex_default_style = 'unsrt'
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
