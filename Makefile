@@ -76,11 +76,11 @@ endif
 # Virtual environment setup
 venv: $(VENVACTIVATE)
 
-$(VENVACTIVATE): requirements.txt
-	test -d $(VENVDIR) || python3 -m venv $(VENVDIR); \
-	. $(VENVACTIVATE); \
-	pip install wheel; \
-	pip install -r requirements.txt; \
+$(VENVACTIVATE): */requirements.txt
+	test -d $(VENVDIR) || python3 -m venv $(VENVDIR) && \
+	. $(VENVACTIVATE) && \
+	pip install wheel && \
+	pip install -r */requirements.txt && \
 	touch $(VENVACTIVATE)
 
 # Docker setup
